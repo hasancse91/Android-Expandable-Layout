@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitApiClient {
  
-        private static final String BASE_URL = "https://raw.githubusercontent.com/hasancse91/Android-Expandable-Layout/" + "master/related_files/";
+        private static final String BASE_URL = "https://raw.githubusercontent.com/hasancse91/Android-Expandable-Layout/" + "master/RelatedFiles/";
 
         private static Retrofit retrofit = null;
  

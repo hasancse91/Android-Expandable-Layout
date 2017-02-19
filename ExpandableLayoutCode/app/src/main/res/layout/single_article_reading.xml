@@ -73,31 +73,31 @@
 
             </RelativeLayout>
 
-            <!--<net.cachapa.expandablelayout.ExpandableLayout-->
-                <!--android:id="@+id/expandable_layout"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--app:el_duration="1000"-->
-                <!--app:el_expanded="true"-->
-                <!--app:el_parallax="0.5"-->
-                <!--android:layout_below="@+id/recyclerHeader">-->
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/expandable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:el_duration="1000"
+                app:el_expanded="true"
+                app:el_parallax="0.5"
+                android:layout_below="@+id/recyclerHeader">
 
-                <!--<RelativeLayout-->
-                    <!--android:id="@+id/expandedLayout"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:clickable="true">-->
+                <RelativeLayout
+                    android:id="@+id/expandedLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true">
 
-                    <!--<TextView-->
-                        <!--android:id="@+id/article"-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:textSize="18sp"-->
-                        <!--android:layout_marginTop="10dp" />-->
+                    <TextView
+                        android:id="@+id/article"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp" />
 
-                <!--</RelativeLayout>-->
+                </RelativeLayout>
 
-            <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+            </net.cachapa.expandablelayout.ExpandableLayout>
 
 
         </RelativeLayout>

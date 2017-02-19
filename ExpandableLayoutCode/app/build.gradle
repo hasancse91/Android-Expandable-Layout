@@ -28,7 +28,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     //Expandable Layout
-    compile 'com.github.aakira:expandable-layout:1.6.0@aar'
+    compile 'net.cachapa.expandablelayout:expandablelayout:[2.8]'
 
     //Picasso Image Loading Library
     compile 'com.squareup.picasso:picasso:2.5.2'
