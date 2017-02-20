@@ -44,6 +44,7 @@ public class ArticleReadingAdapter extends RecyclerView.Adapter<ArticleReadingAd
     @Override
     public void onBindViewHolder(CustomViewHolder holder, int position) {
 
+        holder.position = position;
         ArticleModel articleModel = articleModelList.get(position);
 
 
