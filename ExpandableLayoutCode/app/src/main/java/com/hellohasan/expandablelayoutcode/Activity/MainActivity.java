@@ -1,5 +1,8 @@
 package com.hellohasan.expandablelayoutcode.Activity;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -40,11 +43,15 @@ public class MainActivity extends AppCompatActivity {
         textView = (TextView) findViewById(R.id.textView);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerViewArticleReading);
 
+        if(isNetworkAvailable())
+            callToServer();
+        else{
+            progressBar.setVisibility(View.GONE);
+            textView.setText("No internet Connection available!");
+        }
 
-        callToServer();
 
     }
-
 
     private void callToServer() {
 
@@ -77,5 +84,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 }
